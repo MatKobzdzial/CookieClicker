@@ -189,9 +189,3 @@ cookie.addEventListener("click", bigCookieClick);
 buildingsArr.forEach((building) => {
   buildingEvent(building);
 });
-
-//TO DO
-/*
--> ulepszenia starych bab
--> zmiana buttonu starych bab
-*/
