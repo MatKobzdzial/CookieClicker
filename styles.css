@@ -1,0 +1,312 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto;
+  justify-content: space-between;
+}
+
+.btn {
+  border-style: none;
+  background-color: #00000000;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  border-style: none;
+  transform: scale(1.01);
+  transition: all 0.1s ease;
+}
+
+.btn:active {
+  border-style: none;
+  transform: scale(0.99);
+  transition: all 0.15s ease;
+}
+
+.cookie-to-click {
+  width: 300px;
+  height: 300px;
+  border-radius: 60%;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.counter {
+  font-size: 30px;
+}
+
+.buildings {
+  padding-top: 10px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.building {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: relative;
+  background-color: #eee;
+
+  cursor: pointer;
+}
+
+.building:hover {
+  transform: scale(1.01);
+  transition: all 0.15s ease;
+  box-shadow: 5px 5px 10px #ddd;
+  transition: all 0.2s ease;
+}
+
+.building:active {
+  transform: scale(0.99);
+  transition: all 0.15s ease;
+  box-shadow: 3px 3px 7px #bbb;
+  transition: all 0.2s ease;
+}
+
+.main-msg {
+  padding: 10px 20px;
+  max-width: 500px;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+.middle-pane {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 220px;
+}
+
+.price {
+  display: flex;
+  gap: 3px;
+  justify-content: left;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.cookie-counter {
+  min-width: 160px;
+  padding: 5px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.left-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.outer-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.reset {
+  cursor: pointer;
+  min-width: 160px;
+  padding: 5px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #eee;
+  font-size: 16px;
+}
+
+.reset:hover {
+  box-shadow: 5px 5px 10px #ddd;
+  transition: all 0.2s ease;
+}
+
+.reset:active {
+  box-shadow: 3px 3px 7px #bbb;
+  transition: all 0.2s ease;
+}
+
+.cps {
+  display: flex;
+  gap: 5px;
+}
+
+.no-money {
+  background-color: #d78989;
+}
+
+body {
+  /* background-image: url("imgs/grandma-wallpaper.jpeg"); */
+  background-image: none;
+  background-size: cover;
+  background-position: top;
+}
+
+.upgrades {
+  visibility: hidden;
+  grid-column: 3/4;
+  margin-top: 100px;
+  margin-right: 20px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.upgrade {
+  width: 70px;
+  height: 70px;
+  color: #ccc;
+
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+}
+
+.upgrade:active {
+  transform: scale(0.98);
+  transition: all 0.2s ease;
+}
+
+.granny-1 {
+  background-color: #adda86;
+  background-image: url("imgs/grandma-1.png");
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.tooltip-info {
+  border: 1px solid #000;
+  padding: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.tooltip {
+  width: 200px;
+  background-color: #eee;
+  border-radius: 5px;
+  color: #000;
+  position: absolute;
+  transform: translate(-80%, -80%);
+}
+
+.tooltip-1 {
+  visibility: hidden;
+}
+
+.tooltip-2 {
+  visibility: hidden;
+}
+
+.tooltip-3 {
+  visibility: hidden;
+}
+
+.tooltip-4 {
+  visibility: hidden;
+}
+
+.tooltip-text {
+  font-size: 12px;
+}
+
+.granny-1:hover .tooltip-1 {
+  visibility: visible;
+}
+
+.granny-2 {
+  background-color: #d4d471;
+  background-image: url("imgs/grandma-2.png");
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.granny-2:hover .tooltip-2 {
+  visibility: visible;
+}
+
+.granny-3 {
+  background-color: #deb77a;
+  background-image: url("imgs/grandma-3.png");
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.granny-3:hover .tooltip-3 {
+  visibility: visible;
+}
+
+.granny-4 {
+  background-color: #cd5353;
+  background-image: url("imgs/grandma-4.png");
+  background-size: cover;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.granny-4:hover .tooltip-4 {
+  visibility: visible;
+}
